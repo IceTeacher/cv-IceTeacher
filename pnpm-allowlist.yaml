@@ -1,0 +1,2 @@
+allowedPackages:
+  - name: "@apollo/protobufjs"
