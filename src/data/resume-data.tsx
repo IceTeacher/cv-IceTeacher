@@ -13,10 +13,10 @@ export const RESUME_DATA: ResumeData = {
         <li>第十六届“挑战杯”河南省大学生课外学术科技作品竞赛 省二等奖</li>
         <li>第十四届蓝桥杯全国软件和信息技术专业人才大赛 省三等奖</li>
         <li>河南省三好学生</li>
-        <li>具备项目从 0 到 1 部署上线的经验</li>
+        <li>具备项目从0到1部署上线的经验</li>
         <li>对前后端接口联调过程中的问题能够进行清晰定位</li>
-        <li>熟练 Spring Boot 以及 Express、Flask 等多种不同语言后端开发框架</li>
-        <li>能够独当一面，从 0 到 1 构建前端项目 且 具备完整项目设计、研发、部署、全链路问题排查能力</li>
+        <li>熟练Spring Boot 以及 Express、Flask 等多种不同语言后端开发框架</li>
+        <li>能够独当一面，从0到1构建前端项目且具备完整项目设计、研发、部署、全链路问题排查能力</li>
       </ul>
     </>
   ),
@@ -107,19 +107,42 @@ export const RESUME_DATA: ResumeData = {
     "Next.js",
     "Vue.js",
     "Nuxt.js",
-    "Node.js/Express/Koa/Nest.js",
     "Java/Spring Boot/MyBatis",
+    "Node.js/Express/Koa/Nest.js",
     "TypeScript",
     "Tailwind CSS",
-    "WebRTC",
+    "CSS/Sass/Scss/Less",
     "WebSockets",
+    "WebRTC",
+    "MySQL/MongoDB",
   ],
+  skillsInfo: (
+    <>
+      <ul className='list-disc px-4'>
+        <li>熟练HTML、CSS、Sass、Scss、Less、Tailwind CSS，能够精准还原UI设计师的产品原型图，实现产品级的复现</li>
+        <li>熟练TypeScript、JavaScript、jQuery、面向对象、闭包、原型链、WebAPI、原生DOM</li>
+        <li>
+          熟练React生态，如Umi、Next.js等框架和Redux、Zustand、Ahooks、Motion等库的使用，有基于React
+          Native的移动端应用混合开发经验
+        </li>
+        <li>熟练Vue3/2生态，如Nuxt.js框架和Vue Router、Pinia、Vuex等库的使用</li>
+        <li>熟练Uni-APP，能够实现多端适配以及原生微信小程序开发</li>
+        <li>熟练Echarts数据可视化开发且能够根据业务需求进行自定义扩展</li>
+        <li>熟练Ant Design、Element UI/Plus、Vant、Naive UI、Shadcn/UI、Bootstrap 等多种组件库的使用</li>
+        <li>熟练Java后端开发，掌握Spring Boot、Spring MVC、MyBatis等框架，能够构建RESTful API和微服务架构</li>
+        <li>熟练使用Node.js进行后端开发，掌握Express、Koa、Nest.js等框架，了解tRPC在全栈TypeScript项目中的应用。</li>
+        <li>具备关系型数据库(MySQL)和非关系型数据库(MongoDB)的使用经验，能够进行基本的数据库设计和优化</li>
+        <li>掌握Webpack和Vite的基本配置和使用，有相关工具的配置经验</li>
+        <li>掌握HTTP等计算机网络基础知识，对浏览器知识有一定的了解</li>
+      </ul>
+    </>
+  ),
   projects: [
     {
       title: "DrawingBook儿童绘图本",
       techStack: ["Harmonyos Next", "ArkTS", "ArkUI", "Spring Boot"],
       description:
-        "DrawingBook 是一个 HarmonyOS NEXT 下的绘本阅读和管理应用，旨在为用户提供便捷的绘本查找、阅读和管理功能。该应用包含首页、书单查找、听故事、登录、书单详情、书籍详情、排行榜、分类、带有分类标签的书籍列表、个人资料和更多评论等多个页面。",
+        "DrawingBook是一个HarmonyOS NEXT下的绘本阅读和管理应用，旨在为用户提供便捷的绘本查找、阅读和管理功能。该应用包含首页、书单查找、听故事、登录、书单详情、书籍详情、排行榜、分类、带有分类标签的书籍列表、个人资料和更多评论等多个页面。",
       link: {
         label: "DrawingBook",
         href: "https://github.com/IceTeacher/DrawingBook",
@@ -135,7 +158,7 @@ export const RESUME_DATA: ResumeData = {
       title: "基于物品分类识别的小麦病虫害识别系统",
       techStack: ["miniprogram ", "Python", "Spring Boot"],
       description:
-        "经过多次迭代优化，已实现小麦病虫害识别的准确率高达98%。微信小程序前端允许用户通过拍照来识别小麦病虫害，并提供相关信息与处理建议。后端使用Spring Boot构建了一个稳定的API服务，处理图像上传和识别结果返回，并通过MyBatis实现了与MySQL数据库的交互，存储识别历史和用户数据。",
+        "微信小程序前端允许用户通过拍照来识别小麦病虫害，并提供相关信息与处理建议。后端使用Spring Boot构建了一个稳定的API服务，处理图像上传和识别结果返回，并通过MyBatis实现了与MySQL数据库的交互，存储识别历史和用户数据。",
     },
   ],
 } as const;

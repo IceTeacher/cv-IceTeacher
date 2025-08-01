@@ -38,6 +38,7 @@ export interface ResumeData {
     description: string | React.ReactNode;
   }>;
   skills: string[];
+  skillsInfo: string | React.ReactNode;
   projects: Array<{
     title: string;
     techStack: string[];
