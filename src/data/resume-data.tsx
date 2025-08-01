@@ -15,7 +15,7 @@ export const RESUME_DATA: ResumeData = {
         <li>河南省三好学生</li>
         <li>具备项目从0到1部署上线的经验</li>
         <li>对前后端接口联调过程中的问题能够进行清晰定位</li>
-        <li>熟练Spring Boot 以及 Express、Flask 等多种不同语言后端开发框架</li>
+        <li>熟练Spring Boot以及Express、Flask等基于多种不同语言的后端开发框架</li>
         <li>能够独当一面，从0到1构建前端项目且具备完整项目设计、研发、部署、全链路问题排查能力</li>
       </ul>
     </>
