@@ -8,16 +8,8 @@ export const RESUME_DATA: ResumeData = {
   about: "致力于构建高质量产品的前端工程师。",
   summary: (
     <>
-      <ul className='list-inside list-disc'>
-        <li>2023全国大学生数学建模竞赛 省一等奖</li>
-        <li>第十六届“挑战杯”河南省大学生课外学术科技作品竞赛 省二等奖</li>
-        <li>第十四届蓝桥杯全国软件和信息技术专业人才大赛 省三等奖</li>
-        <li>河南省三好学生</li>
-        <li>具备项目从0到1部署上线的经验</li>
-        <li>对前后端接口联调过程中的问题能够进行清晰定位</li>
-        <li>熟练Spring Boot以及Express、Flask等基于多种不同语言的后端开发框架</li>
-        <li>能够独当一面，从0到1构建前端项目且具备完整项目设计、研发、部署、全链路问题排查能力</li>
-      </ul>
+      一名对构建端到端高质量应用充满热情的全栈工程师，以React和Next.js前端技术为核心，并具备Spring
+      Boot与Node.js的后端能力。曾独立主导开发婚纱摄影工作室老旧管理系统以及官网的全面重构项目，通过技术优化帮助客户将系统部署成本降低50%的同时将线上预约转化率提升了30%，并减少了50%的人工排期工作量。
     </>
   ),
   avatarUrl: "https://avatars.githubusercontent.com/u/47437649?v=4",
@@ -47,35 +39,32 @@ export const RESUME_DATA: ResumeData = {
       link: "#",
       badges: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn/UI", "tRPC"],
       title: "前端开发工程师（全栈）",
-      start: "2025",
-      end: null,
+      start: "2025.03",
+      end: "2025.06",
       description: (
         <>
-          采用Next.js全栈开发了一个婚纱影楼工作室管理系统，包含婚纱影楼企业官网和档期管理系统的前后台，支持用户在线浏览摄影师作品、预约拍摄时间和在线支付功能。企业官网在充分利用了React服务端组件和客户端组件的优势，在保持良好用户体验的同时，显著提升了首屏加载速度。档期管理系统还包含摄影师排班管理、客片管理和数据统计分析功能，提高了影楼的运营效率。系统通过tRPC和Prisma的组合，实现了从前端到数据库的端到端完整的类型安全，大幅减少了系统在实际使用过程中可能出现的类型错误和运行时错误。系统上线后，帮助客户提升了30%的线上预约转化率，减少了50%的人工排期工作量。
           <ul className='list-inside list-disc'>
-            <li>通过Next.js实现了服务端渲染(SSR)和静态生成(SSG)，提升了页面加载速度和SEO优化</li>
-            <li>使用tRPC实现了前后端的端到端类型安全通信，确保了数据的一致性和可靠性</li>
-            <li>使用Redis实现了热门摄影师和套餐的缓存机制，显著提升了系统响应速度</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "易查茶微信小程序",
-      link: "#",
-      badges: ["miniProgram", "Vant", "Spring Boot"],
-      title: "前端开发工程师",
-      start: "2024",
-      end: "2025",
-      description: (
-        <>
-          基于微信小程序的茶叶查询平台，用户可以通过拍照识别茶叶种类，并获取相关信息和购买链接。该小程序使用Vant组件库实现了良好的用户体验，后端使用Spring
-          Boot提供API服务和图片存储功能。通过图像识别技术，系统能够准确识别多种茶叶类型，并提供详细的茶叶介绍和购买建议。
-          <ul className='list-inside list-disc'>
-            <li>使用微信小程序的API实现了拍照识别功能，用户可以通过拍照上传茶叶图片</li>
-            <li>使用Vant组件库实现了小程序的UI设计，提供了良好的用户体验</li>
-            <li>使用图像识别技术实现了茶叶种类的自动识别，提供了准确的茶叶信息</li>
-            <li>后端使用Spring Boot提供API服务和图片存储功能</li>
+            <li>
+              <b>成就：</b>
+              主导项目重构改造从0到1的完整设计、研发与部署。项目上线后，帮助客户线上预约转化率提升30%，
+              人工排期工作量减少50%
+            </li>
+            <li>
+              <b>性能与SEO：</b>
+              为解决官网首屏加载慢、不利于搜索引擎收录的问题，采用Next.js混合渲染模式。针对作品展示等静态页面使用SSG，将
+              LCP时间从2.6秒优化至1.2秒；对用户预约等动态页面采用SSR，确保了最佳SEO效果与数据实时性。
+            </li>
+            <li>
+              <b>类型安全与效率：</b>为解决传统REST
+              API开发中前后端类型不匹配、联调效率低的问题，引入tRPC与Prisma，实现了从数据库到前端的端到端类型安全，
+              将开发阶段因接口数据不匹配导致的Bug减少了约20%，提升了多人协作效率与项目稳定性。
+            </li>
+            <li>
+              <b>高可用：</b>
+              通过与Microsoft
+              Clarity数据埋点系统的集成，合理化分析用户行为，识别出热门摄影师、套餐的高频访问路径和用户高热度点击区域，设计并实现了基于Redis的高热度热门数据的缓存策略，将核心页面的
+              API平均响应时间从约300ms降低至100ms以下。
+            </li>
           </ul>
         </>
       ),
@@ -85,18 +74,45 @@ export const RESUME_DATA: ResumeData = {
       link: "#",
       badges: ["Uni-APP", "Vue.js", "React", "Spring Boot"],
       title: "前端开发工程师",
-      start: "2023",
-      end: "2024",
+      start: "2024.03",
+      end: "2024.06",
       description: (
         <>
-          确保前后端的类型安全，确保积分兑换和商品核销过程的数据一致性和系统稳定性。使用Spring
-          Boot实现了核心业务逻辑，通过MyBatis进行ORM映射，并使用Redis实现了高频数据的缓存，显著提升了系统性能。
           <ul className='list-inside list-disc'>
-            <li>使用Uni-APP实现了多端适配，支持Android、iOS和小程序等多个平台</li>
-            <li>使用React实现了后台管理页面的开发</li>
-            <li>使用Spring Boot实现了后端API服务，提供了积分兑换和商品核销的核心业务逻辑</li>
-            <li>使用MyBatis进行ORM映射，简化了数据库操作</li>
-            <li>使用Redis实现了高频数据的缓存，显著提升了系统性能</li>
+            <li>
+              <b>跨端方案：</b>
+              为在有限的成本内覆盖Android、iOS及微信小程序多端用户，主导采用Uni-APP作为跨端解决方案。通过封装平台特定API和条件编译，实现了超过85%的代码复用率，将多端应用的开发周期缩短了至少一半。
+            </li>
+            <li>
+              <b>后台系统：</b> 使用React和Ant
+              Design独立开发了后台管理系统，通过对大型列表数据页面引入虚拟列表和前端搜索优化，使管理员处理上万条商品核销记录的页面加载和操作流畅度提升了90%。
+            </li>
+            <li>
+              <b>后端服务：</b>:
+              负责后端积分兑换核销业务模块部分，针对积分兑换高频读写场景，引入Redis缓存用户积分与热门商品信息，将兑换接口的响应时间稳定在80ms以下。
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      company: "易查茶微信小程序（竞赛项目）",
+      link: "#",
+      badges: ["miniProgram", "Vant", "Spring Boot", "React"],
+      title: "前端开发工程师",
+      start: "2023.10",
+      end: "2024.01",
+      description: (
+        <>
+          <ul className='list-inside list-disc'>
+            <li>
+              <b>核心功能：</b>
+              负责实现拍照识茶核心功能。通过调用微信原生API并对上传图片进行预处理，结合后端图像识别服务，将用户从拍照到获取识别结果的端到端平均耗时控制在2.5秒以内。
+            </li>
+            <li>
+              <b>用户体验：</b>
+              使用Vant组件库构建UI，并针对小程序环境使用骨架屏增强用户体验，并将程序主包与用于拍照识别的分包通过分包加载进行性能优化，将小程序的启动耗时减少了40%，关键页面的加载成功率达到99.9%。
+            </li>
           </ul>
         </>
       ),
@@ -107,8 +123,8 @@ export const RESUME_DATA: ResumeData = {
     "Next.js",
     "Vue.js",
     "Nuxt.js",
-    "Java/Spring Boot/MyBatis",
-    "Node.js/Express/Koa/Nest.js",
+    "Java(Spring Boot/MyBatis)",
+    "Node.js(Express/Koa/Nest.js)",
     "TypeScript",
     "Tailwind CSS",
     "CSS/Sass/Scss/Less",
@@ -119,21 +135,18 @@ export const RESUME_DATA: ResumeData = {
   skillsInfo: (
     <>
       <ul className='list-disc px-4'>
-        <li>熟练HTML、CSS、Sass、Scss、Less、Tailwind CSS，能够精准还原UI设计师的产品原型图，实现产品级的复现</li>
-        <li>熟练TypeScript、JavaScript、jQuery、面向对象、闭包、原型链、WebAPI、原生DOM</li>
         <li>
-          熟练React生态，如Umi、Next.js等框架和Redux、Zustand、Ahooks、Motion等库的使用，有基于React
-          Native的移动端应用混合开发经验
+          <b>精通：</b>TypeScript, React, Next.js, Node.js (Express, Koa), Web性能优化, RESTful API设计,
         </li>
-        <li>熟练Vue3/2生态，如Nuxt.js框架和Vue Router、Pinia、Vuex等库的使用</li>
-        <li>熟练Uni-APP，能够实现多端适配以及原生微信小程序开发</li>
-        <li>熟练Echarts数据可视化开发且能够根据业务需求进行自定义扩展</li>
-        <li>熟练Ant Design、Element UI/Plus、Vant、Naive UI、Shadcn/UI、Bootstrap 等多种组件库的使用</li>
-        <li>熟练Java后端开发，掌握Spring Boot、Spring MVC、MyBatis等框架，能够构建RESTful API和微服务架构</li>
-        <li>熟练使用Node.js进行后端开发，掌握Express、Koa、Nest.js等框架，了解tRPC在全栈TypeScript项目中的应用。</li>
-        <li>具备关系型数据库(MySQL)和非关系型数据库(MongoDB)的使用经验，能够进行基本的数据库设计和优化</li>
-        <li>掌握Webpack和Vite的基本配置和使用，有相关工具的配置经验</li>
-        <li>掌握HTTP等计算机网络基础知识，对浏览器知识有一定的了解</li>
+        <li>
+          <b>熟悉：</b>Vue.js, Spring Boot, MyBatis, MySQL, MongoDB, Redis, Uni-APP, Echarts
+        </li>
+        <li>
+          <b>了解：</b>HarmonyOS (ArkTS, ArkUI), 原生Android/iOS开发 (Kotlin/Swift), WebRTC, tRPC
+        </li>
+        <li>
+          <b>工具：</b>Vite, Webpack, Git, Docker, Nginx
+        </li>
       </ul>
     </>
   ),
