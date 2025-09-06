@@ -171,7 +171,7 @@ export const RESUME_DATA: ResumeData = {
       title: "基于物品分类识别的小麦病虫害识别系统",
       techStack: ["miniprogram ", "Python", "Spring Boot"],
       description:
-        "微信小程序前端允许用户通过拍照来识别小麦病虫害，并提供相关信息与处理建议。后端使用Spring Boot构建了一个稳定的API服务，处理图像上传和识别结果返回，并通过MyBatis实现了与MySQL数据库的交互，存储识别历史和用户数据。",
+        "图像识别部分使用PaddlePaddle的PP-LCNet实现了对6种小麦作物病害和8种小麦虫害的图像识别，后端使用Spring Boot构建了一个稳定的API服务，处理图像上传和识别结果返回，并通过MyBatis实现了与MySQL数据库的交互，存储识别历史和用户数据。",
     },
   ],
 } as const;
