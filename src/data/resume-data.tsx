@@ -8,7 +8,7 @@ export const RESUME_DATA: ResumeData = {
   about: "致力于构建高质量产品的前端工程师。",
   summary: (
     <>
-      一名对构建端到端高质量应用充满热情的前端开发工程师，以React和Next.js前端技术为核心，并具备Spring
+      一名对构建高质量应用充满热情的前端开发工程师，以React和Next.js前端技术为核心，并具备Spring
       Boot与Node.js的后端能力。曾独立主导开发婚纱摄影工作室老旧管理系统以及官网的全面重构项目，通过技术优化帮助客户将系统部署成本降低50%的同时将线上预约转化率提升了30%，并减少了50%的人工排期工作量。
     </>
   ),
@@ -37,7 +37,7 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "婚纱影楼工作室",
       link: "#",
-      badges: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn/UI", "tRPC"],
+      badges: ["Next.js", "Tailwind CSS", "Shadcn/UI", "tRPC"],
       title: "前端开发工程师（全栈）",
       start: "2025.03",
       end: "2025.06",
@@ -72,7 +72,7 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "社区志愿者服务积分兑换平台",
       link: "#",
-      badges: ["Uni-APP", "Vue.js", "React", "Spring Boot"],
+      badges: ["Uni-APP", "React", "Spring Boot"],
       title: "前端开发工程师",
       start: "2024.03",
       end: "2024.06",
@@ -85,10 +85,10 @@ export const RESUME_DATA: ResumeData = {
             </li>
             <li>
               <b>后台系统：</b> 使用React和Ant
-              Design独立开发了后台管理系统，通过对大型列表数据页面引入虚拟列表和前端搜索优化，使管理员处理上万条商品核销记录的页面加载和操作流畅度提升了90%。
+              Design独立开发了后台管理系统，通过对大型列表数据页面引入虚拟列表和前端搜索优化，使管理员同时处理上千条商品核销记录的页面加载和操作流畅度提升了90%。
             </li>
             <li>
-              <b>后端服务：</b>:
+              <b>后端服务：</b>
               负责后端积分兑换核销业务模块部分，针对积分兑换高频读写场景，引入Redis缓存用户积分与热门商品信息，将兑换接口的响应时间稳定在80ms以下。
             </li>
           </ul>
@@ -98,7 +98,7 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "易查茶微信小程序（竞赛项目）",
       link: "#",
-      badges: ["miniProgram", "Vant", "Spring Boot", "React"],
+      badges: ["miniProgram", "Spring Boot", "React"],
       title: "前端开发工程师",
       start: "2023.10",
       end: "2024.01",
@@ -119,30 +119,27 @@ export const RESUME_DATA: ResumeData = {
     },
   ],
   skills: [
+    "TypeScript",
     "React",
-    "Next.js",
     "Vue.js",
-    "Nuxt.js",
+    "Next.js",
     "Java(Spring Boot/MyBatis)",
     "Node.js(Express/Koa/Nest.js)",
-    "TypeScript",
     "Tailwind CSS",
-    "CSS/Sass/Scss/Less",
-    "WebSockets",
-    "WebRTC",
+    "CSS/Sass/Less",
     "MySQL/MongoDB",
   ],
   skillsInfo: (
     <>
       <ul className='list-disc px-4'>
         <li>
-          <b>精通：</b>TypeScript, React, Next.js, Node.js (Express, Koa), Web性能优化, RESTful API设计,
+          <b>精通：</b>TypeScript, React, Vue.js, Next.js, Node.js(Express/Koa/Nest.js), Web性能优化, RESTful API设计
         </li>
         <li>
-          <b>熟悉：</b>Vue.js, Spring Boot, MyBatis, MySQL, MongoDB, Redis, Uni-APP, Echarts
+          <b>熟悉：</b>Spring Boot, MyBatis, MySQL, MongoDB, Redis, Uni-APP, Echarts, tRPC
         </li>
         <li>
-          <b>了解：</b>HarmonyOS (ArkTS, ArkUI), 原生Android/iOS开发 (Kotlin/Swift), WebRTC, tRPC
+          <b>了解：</b>HarmonyOS(ArkTS, ArkUI), Python(Flask/NumPy/pandas)
         </li>
         <li>
           <b>工具：</b>Vite, Webpack, Git, Docker, Nginx
@@ -155,7 +152,7 @@ export const RESUME_DATA: ResumeData = {
       title: "DrawingBook儿童绘图本",
       techStack: ["Harmonyos Next", "ArkTS", "ArkUI", "Spring Boot"],
       description:
-        "DrawingBook是一个HarmonyOS NEXT下的绘本阅读和管理应用，旨在为用户提供便捷的绘本查找、阅读和管理功能。该应用包含首页、书单查找、听故事、登录、书单详情、书籍详情、排行榜、分类、带有分类标签的书籍列表、个人资料和更多评论等多个页面。",
+        "为探索学习HarmonyOS NEXT的声明式UI与分布式能力而立项。项目中最大的挑战是在鸿蒙原生ArkTS项目中使用H5混合开发时会遇到H5视图与原生视图滚动事件冲突的问题，最后通过重写滚动监听事件和使用自定义事件穿透成功攻克。",
       link: {
         label: "DrawingBook",
         href: "https://github.com/IceTeacher/DrawingBook",
@@ -165,13 +162,13 @@ export const RESUME_DATA: ResumeData = {
       title: "番茄钟个人待办事项APP",
       techStack: ["React Native", "Kotlin", "Swift", "Spring Boot", "mongoDB"],
       description:
-        "使用Kotlin和Swift分别原生开发的Android和iOS系统小组件，以提高用户的便利性和效率。后端使用Koa框架构建了轻量级API服务，实现了用户认证、任务同步和数据统计功能，通过MongoDB存储用户任务数据和完成记录。",
+        "为深入理解Android与iOS移动端应用的开发机制，使用React Native混合开发的形式并使用Kotlin和Swift分别原生开发了双端小组件。后端采用Koa.js构建轻量级API，并使用MongoDB存储数据，实践了在不同平台下实现UI/UE一致性的策略，并对Node.js的事件循环有了更深的理解。",
     },
     {
       title: "基于物品分类识别的小麦病虫害识别系统",
       techStack: ["miniprogram ", "Python", "Spring Boot"],
       description:
-        "图像识别部分使用PaddlePaddle的PP-LCNet实现了对6种小麦作物病害和8种小麦虫害的图像识别，后端使用Spring Boot构建了一个稳定的API服务，处理图像上传和识别结果返回，并通过MyBatis实现了与MySQL数据库的交互，存储识别历史和用户数据。",
+        "为将轻量级视觉模型落地到实际业务并验证端云协同方案而立项。图像识别部分基于PaddlePaddle的PP-LCNet，实现对6种小麦病害和8种虫害的识别；前端以小程序完成图像采集与结果展示。后端采用Spring Boot构建稳定API，配合MyBatis与MySQL处理图像上传与识别结果返回，并持久化识别历史和用户数据。",
     },
   ],
 } as const;

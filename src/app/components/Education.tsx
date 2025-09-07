@@ -77,8 +77,8 @@ export function Education({ education }: EducationListProps) {
             <ol className='list-inside list-disc'>
               <li>2023全国大学生数学建模竞赛 省一等奖</li>
               <li>第十六届“挑战杯”河南省大学生课外学术科技作品竞赛 省二等奖</li>
-              <li>第四届传智杯全国IT技能大赛 省二等奖</li>
-              <li>第十四届蓝桥杯大赛 省三等奖</li>
+              <li>第五届传智杯全国大学生IT技能大赛 省二等奖</li>
+              <li>第十四届蓝桥杯全国软件和信息技术专业人才大赛 省三等奖</li>
               <li>河南省三好学生</li>
             </ol>
           </CardContent>
