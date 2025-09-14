@@ -43,7 +43,7 @@ export const RESUME_DATA: ResumeData = {
       end: "2025.06",
       description: (
         <>
-          <ul className='list-inside list-disc'>
+          <ul className="list-inside list-disc">
             <li>
               <b>成就：</b>
               主导项目重构改造从0到1的完整设计、研发与部署。项目上线后，帮助客户线上预约转化率提升30%，
@@ -70,15 +70,15 @@ export const RESUME_DATA: ResumeData = {
       ),
     },
     {
-      company: "社区志愿者服务积分兑换平台",
+      company: "社区志愿者服务积分兑换平台（竞赛项目）",
       link: "#",
-      badges: ["Uni-APP", "React", "Spring Boot"],
+      badges: ["Uni-APP", "Spring Boot"],
       title: "前端开发工程师",
       start: "2024.03",
       end: "2024.06",
       description: (
         <>
-          <ul className='list-inside list-disc'>
+          <ul className="list-inside list-disc">
             <li>
               <b>跨端方案：</b>
               为在有限的成本内覆盖Android、iOS及微信小程序多端用户，主导采用Uni-APP作为跨端解决方案。通过封装平台特定API和条件编译，实现了超过85%的代码复用率，将多端应用的开发周期缩短了至少一半。
@@ -104,7 +104,7 @@ export const RESUME_DATA: ResumeData = {
       end: "2024.01",
       description: (
         <>
-          <ul className='list-inside list-disc'>
+          <ul className="list-inside list-disc">
             <li>
               <b>核心功能：</b>
               负责实现拍照识茶核心功能。通过调用微信原生API并对上传图片进行预处理，结合后端图像识别服务，将用户从拍照到获取识别结果的端到端平均耗时控制在2.5秒以内。
@@ -131,7 +131,7 @@ export const RESUME_DATA: ResumeData = {
   ],
   skillsInfo: (
     <>
-      <ul className='list-disc px-4'>
+      <ul className="list-disc px-4">
         <li>
           <b>精通：</b>TypeScript, React, Vue.js, Next.js, Node.js(Express/Koa/Nest.js), Web性能优化, RESTful API设计
         </li>
@@ -139,7 +139,7 @@ export const RESUME_DATA: ResumeData = {
           <b>熟悉：</b>Spring Boot, MyBatis, MySQL, MongoDB, Redis, Uni-APP, Echarts, tRPC
         </li>
         <li>
-          <b>了解：</b>HarmonyOS(ArkTS, ArkUI), Python(Flask/NumPy/pandas)
+          <b>了解：</b>Python(Flask/NumPy/pandas), HarmonyOS(ArkTS, ArkUI)
         </li>
         <li>
           <b>工具：</b>Vite, Webpack, Git, Docker, Nginx
@@ -162,7 +162,7 @@ export const RESUME_DATA: ResumeData = {
       title: "番茄钟个人待办事项APP",
       techStack: ["React Native", "Kotlin", "Swift", "Spring Boot", "mongoDB"],
       description:
-        "为深入理解Android与iOS移动端应用的开发机制，使用React Native混合开发的形式并使用Kotlin和Swift分别原生开发了双端小组件。后端采用Koa.js构建轻量级API，并使用MongoDB存储数据，实践了在不同平台下实现UI/UE一致性的策略，并对Node.js的事件循环有了更深的理解。",
+        "为深入理解Android与iOS移动端应用的开发机制而立项，使用React Native混合开发的形式并使用Kotlin和Swift分别原生开发了双端小组件。后端采用Koa.js构建轻量级API，并使用MongoDB存储数据，实践了在不同平台下实现UI/UE一致性的策略，并对Node.js的事件循环有了更深的理解。",
     },
     {
       title: "基于物品分类识别的小麦病虫害识别系统",

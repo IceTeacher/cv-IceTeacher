@@ -15,7 +15,7 @@ interface EducationPeriodProps {
  */
 function EducationPeriod({ start, end }: EducationPeriodProps) {
   return (
-    <div className='text-sm tabular-nums text-gray-500' title={`Period: ${start} to ${end}`}>
+    <div className="text-sm tabular-nums text-gray-500" title={`Period: ${start} to ${end}`}>
       {start} - {end}
     </div>
   );
@@ -34,15 +34,15 @@ function EducationItem({ education }: EducationItemProps) {
   return (
     <Card>
       <CardHeader>
-        <div className='flex items-center justify-between gap-x-2 text-base'>
-          <h3 className='font-semibold leading-none' id={`education-${school.toLowerCase().replace(/\s+/g, "-")}`}>
+        <div className="flex items-center justify-between gap-x-2 text-base">
+          <h3 className="font-semibold leading-none" id={`education-${school.toLowerCase().replace(/\s+/g, "-")}`}>
             {school}
           </h3>
           <EducationPeriod start={start} end={end} />
         </div>
       </CardHeader>
       <CardContent
-        className='mt-2 text-foreground/80 print:text-[12px]'
+        className="mt-2 text-foreground/80 print:text-[12px]"
         aria-labelledby={`education-${school.toLowerCase().replace(/\s+/g, "-")}`}
       >
         {degree}
@@ -62,19 +62,26 @@ interface EducationListProps {
 export function Education({ education }: EducationListProps) {
   return (
     <Section>
-      <h2 className='text-xl font-bold' id='education-section'>
+      <h2 className="text-xl font-bold" id="education-section">
         教育经历
       </h2>
-      <div className='space-y-4' role='feed' aria-labelledby='education-section'>
+      <div className="space-y-4" role="feed" aria-labelledby="education-section">
         {education.map((item) => (
           <article key={item.school}>
             <EducationItem education={item} />
           </article>
         ))}
         <div>
-          <h3 className='font-semibold leading-none'>荣誉奖项</h3>
-          <CardContent className='mt-2 text-foreground/80 print:text-[12px]'>
-            <ol className='list-inside list-disc'>
+          <h4 className="text-sm font-semibold leading-none">主要课程</h4>
+          <CardContent className="mt-2 text-foreground/80 print:text-[12px]">
+            <p>数据结构、操作系统、计算机组成原理、计算机网络、数据库原理、软件工程、图形图像处理、前端框架开发</p>
+            <p>绩点:3.47</p>
+          </CardContent>
+        </div>
+        <div>
+          <h4 className="text-sm font-semibold leading-none">荣誉奖项</h4>
+          <CardContent className="mt-2 text-foreground/80 print:text-[12px]">
+            <ol className="list-inside list-disc">
               <li>2023全国大学生数学建模竞赛 省一等奖</li>
               <li>第十六届“挑战杯”河南省大学生课外学术科技作品竞赛 省二等奖</li>
               <li>第五届传智杯全国大学生IT技能大赛 省二等奖</li>
