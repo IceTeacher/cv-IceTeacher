@@ -39,8 +39,8 @@ export const RESUME_DATA: ResumeData = {
       link: "#",
       badges: ["Next.js", "Tailwind CSS", "Shadcn/UI", "tRPC"],
       title: "前端开发工程师（全栈）",
-      start: "2025.03",
-      end: "2025.06",
+      start: "2024.10",
+      end: "2025.01",
       description: (
         <>
           <ul className="list-inside list-disc">
