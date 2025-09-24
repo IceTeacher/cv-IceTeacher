@@ -11,21 +11,22 @@ import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import { Summary } from "./components/Summary";
 import { WorkExperience } from "./components/WorkExperience";
+import { reactToString } from "@/lib/types";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} - 个人简历`,
   description: RESUME_DATA.about,
   openGraph: {
     title: `${RESUME_DATA.name} - 个人简历`,
-    description: RESUME_DATA.about,
+    description: reactToString(RESUME_DATA.summary),
     type: "profile",
     locale: "zh-CN",
     images: [
       {
-        url: "https://cv.jarocki.me/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: `${RESUME_DATA.name}'s profile picture`,
+        url: RESUME_DATA.avatarUrl,
+        width: 400,
+        height: 400,
+        alt: `${RESUME_DATA.name}的个人简历`,
       },
     ],
   },

@@ -6,6 +6,7 @@ import "./globals.css";
 import type React from "react";
 import { ErrorBoundary } from "@/components/error-boundary";
 import { RESUME_DATA } from "@/data/resume-data";
+import { reactToString } from "@/lib/types";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -40,11 +41,20 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "zh_CN",
     url: RESUME_DATA.personalWebsiteUrl,
     siteName: `${RESUME_DATA.name}'s CV`,
     title: `${RESUME_DATA.name} - ${RESUME_DATA.about}`,
-    description: RESUME_DATA.about,
+    description: reactToString(RESUME_DATA.summary),
+    images: [
+      {
+        url: RESUME_DATA.avatarUrl,
+        width: 400,
+        height: 400,
+        alt: `${RESUME_DATA.name}的个人简历`,
+        type: "image/png",
+      },
+    ],
   },
   robots: {
     index: true,
@@ -78,13 +88,9 @@ export const viewport: Viewport = {
   maximumScale: 5,
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang='en' className={inter.className}>
       <body>
         <ErrorBoundary>{children}</ErrorBoundary>
       </body>
